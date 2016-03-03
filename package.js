@@ -1,7 +1,7 @@
 // Package Info
 Package.describe({
   name: 'alexandesigner:frontlabs',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'A front-end labs that helps you build fast an modern web and mobile apps.',
   git: 'https://github.com/allanalexandre/frontlabs-meteor',
   documentation: 'README.md'
