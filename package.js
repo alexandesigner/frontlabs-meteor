@@ -1,7 +1,7 @@
 // Package Info
 Package.describe({
   name: 'alexandesigner:frontlabs',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'A front-end labs that helps you build fast an modern web and mobile apps.',
   git: 'https://github.com/allanalexandre/frontlabs-meteor',
   documentation: 'README.md'
@@ -86,4 +86,12 @@ api.addAssets('scss/layout/adaptive/_no-screen.scss', 'client');
 api.addAssets('scss/_defaults.scss', 'client');
 api.addAssets('scss/core.scss', 'client');
 
+});
+
+// Tests
+Package.onTest(function(api) {
+  api.use('tinytest');
+  api.use('jquery');
+  api.use('alexandesigner:frontlabs');
+  api.addFiles('frontlabs-tests.js');
 });
